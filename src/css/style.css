@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    border: 5px dotted blue;
+    height: 700px;
+    position: relative;
+    color: white;
+    background-color: black;
+}
+
+.position{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* esta por defecto */
+.static{
+    background-color: red;
+    position: static;
+}
+
+.sticky{
+    background-color: orange;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* se mueve por todas partes independientemente del contenedor */
+.relative{
+    background-color: yellow;
+    position: relative;
+    top: 60%;
+    left: 92%;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+}
+
+/* toma como punto de referencia la pagina */
+.absolute{
+    background-color: lightblue;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    z-index: 1;
+}
+
+
+.fixed{
+    background-color: greenyellow;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
